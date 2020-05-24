@@ -64,6 +64,7 @@ async def on_message(message):
     elif command == "업뎃":
         em = discord.Embed(title="코민봇 1.1 업데이트", colour=0xFF0000)
         em.set_author(name="코민봇 패치 내역")
+        em.add_field(name="코민봇 호스팅", value="코민봇이 github 서버 컴퓨터에 넘겨졌습니다. 앞으로는 24시간 내내 갈궈질겁니다",inline=False)
         em.add_field(name="저작권 관련 문제", value="디스코드 봇 프로필에 이용된 그림이 저작권 관련 문제로 일시적으로 내려갔습니다",inline=False)
         await client.send_message(message.channel, embed=em)
 
