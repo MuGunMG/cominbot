@@ -166,5 +166,5 @@ async def on_ready():
     await client.change_presence(game=discord.Game(name="도움말은 '코민님 도움'을 입력해!", type=1))
 
 
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
